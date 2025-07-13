@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill-bar {
+  margin: 10px 0;
+}
+
+.bar {
+  height: 20px;
+  background: #2a5298;
+  border-radius: 5px;
+  animation: grow 2s ease forwards;
+}
+
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 80%; }
+.react { width: 75%; }
+.sql { width: 70%; }
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: var(--width); }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #2a5298;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
